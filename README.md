@@ -1,6 +1,7 @@
 # Arduino Music Reactive RGB LED Tutorial Source Code
 Setup desktop app: 
 ```bash
+cd app
 npm i
 npm start
 ```
