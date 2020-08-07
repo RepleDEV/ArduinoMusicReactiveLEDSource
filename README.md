@@ -2,6 +2,7 @@
 Setup desktop app: 
 ```bash
 npm i
+npm start
 ```
 Packaging:
 ```bash
