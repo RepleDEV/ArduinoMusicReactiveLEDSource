@@ -59,9 +59,13 @@ function calculate() {
     }
 
     colors = colors.map(val => Math.round(val * (volume / 255)));
-    sendInput(colors.join(','));
-    var color = `rgb(${colors.join(',')})`;
-    document.getElementById("debug_box").style.backgroundColor = color;
+    if (volume > 0) {
+        if (port)sendInput(colors.join(','));
+
+        // DEBUG
+        // var color = `rgb(${colors.join(',')})`;
+        // document.getElementById("debug_box").style.backgroundColor = color;
+    }
 
     setTimeout(calculate, 25);
 }
